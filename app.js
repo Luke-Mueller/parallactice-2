@@ -53,7 +53,7 @@ const output = {
 output.x.range = output.x.end - output.x.start;
 output.y.range = output.y.end - output.y.start;
 
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 70; i++) {
   // create new element
   const item = document.createElement("div");
   item.className = "item";
@@ -75,8 +75,8 @@ for (let i = 0; i < 40; i++) {
   const zIndex = output.zIndex.range * depth;
 
   item.dataset.depth = depth;
-  item.style.width = (400 * depth + 50) / 10 + "rem";
-  item.style.height = (400 * depth + 50) / 10 + "rem";
+  item.style.width = (300 * depth + 50) / 10 + "rem";
+  item.style.height = (300 * depth + 50) / 10 + "rem";
   item.style.filter = `blur(${output.blur.range - blur}px)`;
   item.style.left = `${Math.random() * 100 - 20}%`;
   item.style.top = `${Math.random() * 100 - 20}%`;
