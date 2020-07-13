@@ -53,7 +53,7 @@ const output = {
 output.x.range = output.x.end - output.x.start;
 output.y.range = output.y.end - output.y.start;
 
-for (let i = 0; i < 70; i++) {
+for (let i = 0; i < 60; i++) {
   // create new element
   const item = document.createElement("div");
   item.className = "item";
